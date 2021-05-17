@@ -7,6 +7,7 @@
         <title>Web dev skills challenge boilerplate</title>
 
         <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
+        @include('mapbox-css')
     </head>
     <body>
         <main id="app">
