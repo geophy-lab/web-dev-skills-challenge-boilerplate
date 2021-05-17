@@ -1,5 +1,7 @@
 <template>
-  <aside>Example component</aside>
+  <aside>
+    <p class="font-bold">Example component</p>
+  </aside>
 </template>
 
 <script>
