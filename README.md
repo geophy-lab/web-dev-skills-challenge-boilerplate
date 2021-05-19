@@ -9,8 +9,12 @@
 Set [your identity](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
 ## Install / start application
-1) `./vendor/bin/sail up`
-2) `./vendor/bin/sail npm install`
+1) Clone the application locally
+2) `cd web-dev-skills-challenge-boilerplate && composer install`
+3) `cp .env.example .env`
+4) `php artisan key:generate`
+3) `./vendor/bin/sail up`
+4) `./vendor/bin/sail npm install`
 
 ## Access application
 [http://localhost](http://localhost)
