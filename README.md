@@ -13,10 +13,10 @@ Set [your identity](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Gi
 1) `cd web-dev-skills-challenge-boilerplate`
 1) Install composer dependencies through the container https://laravel.com/docs/8.x/sail#installing-composer-dependencies-for-existing-projects
 1) `cp .env.example .env`
-1) `./vendor/bin/sail artisan key:generate`
-1) `./vendor/bin/sail up`
-1) `./vendor/bin/sail npm install`
-1) `./vendor/bin/sail npm run dev`
+2) `./vendor/bin/sail up`
+3) `./vendor/bin/sail artisan key:generate`
+4) `./vendor/bin/sail npm install`
+5) `./vendor/bin/sail npm run dev`
 
 ## Access application
 [http://localhost](http://localhost)
