@@ -1,11 +1,31 @@
 <template>
-  <aside>
-    <p class="font-bold">Example component</p>
-  </aside>
+    <div>
+        <p class="font-bold">Example component</p>
+        <div class="p-2">
+            <div id="map" class="w-96 h-96" />
+        </div>
+    </div>
 </template>
 
 <script>
+import { onMounted } from 'vue';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
+
 export default {
-  name: "example-component"
+    setup() {
+        let map = null
+
+        onMounted(() => {
+            // https://docs.mapbox.com/mapbox-gl-js/example/add-a-marker/
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWlscm95ZnJhc2VyIiwiYSI6ImNrZjlmNXgzZzBmMGkyeG9mZzdyc2txdngifQ.cLcClvWIf-podA222ZhHhA';
+            map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+            })
+        })
+
+        return {};
+    }
 }
 </script>
