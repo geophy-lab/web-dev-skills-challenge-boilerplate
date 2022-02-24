@@ -18,7 +18,7 @@ export default {
 
         onMounted(() => {
             // https://docs.mapbox.com/mapbox-gl-js/example/add-a-marker/
-            mapboxgl.accessToken = 'pk.eyJ1IjoibWlscm95ZnJhc2VyIiwiYSI6ImNrZjlmNXgzZzBmMGkyeG9mZzdyc2txdngifQ.cLcClvWIf-podA222ZhHhA';
+            mapboxgl.accessToken = 'SET_YOUR_ACCESS_TOKEN';
             map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/mapbox/streets-v11',
